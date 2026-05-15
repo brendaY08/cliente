@@ -24,12 +24,12 @@
     }
 </style>
     <body>
-        <div class="container">
         <nav class="navbar bg-body-tertiary">
             <form class="container-fluid justify-content-start">
                 <a href="{% url 'sair' %}" class="btn btn-outline-success me-2" type="button">Sair</a>
             </form>
         </nav>
+        <div class="container">
             <form method="post">
             {% csrf_token %}
             <h1>Preencha os dados abaixo</h1>
